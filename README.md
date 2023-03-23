@@ -1,5 +1,6 @@
 ## Overview
 In project 3, I developed a logistic regression training model, and upload training dataset on AWS S3 for data file storage.
+
 I also try to deploy the program on Amazon SageMaker Studio, but found it only support more commonly used data analysis language like R and Python.
 
 
