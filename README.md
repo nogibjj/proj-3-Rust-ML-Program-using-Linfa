@@ -1,5 +1,5 @@
 ## Overview
-In project 3, I developed a logistic regression training model, and plan to deploy it on Amazon SageMaker Studio.
+In project 3, I developed a logistic regression training model, use AWS S3 for data file storage, and try to deploy the program on Amazon SageMaker Studio.
 
 
 
