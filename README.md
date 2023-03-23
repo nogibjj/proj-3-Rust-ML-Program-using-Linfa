@@ -1,11 +1,11 @@
 ## Overview
-In project 3, I developed a logistic regression training model, use AWS S3 for data file storage, and try to deploy the program on Amazon SageMaker Studio.
+In project 3, I developed a logistic regression training model, and upload training dataset on AWS S3 for data file storage.
+I also try to deploy the program on Amazon SageMaker Studio, but found it only support more commonly used data analysis language like R and Python.
 
 
+### Rust ML Program: Fit Logistic Regrssion Classifier on Wine Quality
 
-### 1. Rust ML Program
-
-#### 1.1. Linfa - A Meta-crate for ML
+#### 1.Linfa - A Meta-crate for ML
 
 Linfa is a higher-level meta-crate that includes common helpers for data processing and algorithms for many areas of machine learning, including [[1]](https://blog.logrocket.com/machine-learning-in-rust-using-linfa/):
 
@@ -16,32 +16,22 @@ Linfa is a higher-level meta-crate that includes common helpers for data process
 - Bayes
 - SVMs
 
-#### 1.2. Minimal ML Dataset
+#### 2. Dataset
 
-The first week's work is to build a simple machine learning application in Rust. A very small dataset containing only 100 records is used.
+In the code of main.rs, I use the build in dataset in linfa to classify quality of wine into good and bad
+```let(train,valid) = linfa_datasets::winequality()```
 
-There are two datasets in ```data``` folder, one is for traning ```train.csv``` and the other is for testing ```test.csv```.
+There are also two relatively big datasets in ```data``` folder: ```winequality-white.csv``` and ```winequality-red.csv```.
 
-Both datasets look like this:
+
+#### 3. Run the Training Model Locally
+
+To run the training model, type:
 
 ```
-67.94685548	46.67857411	0
-70.66150955	92.92713789	1
+cargo run
 ```
-
-Where, the first and the second columns are the two ```features```, and the last column is the ```target```, and ```1``` is for acceptance, and ```0``` means denied.
-
-
-#### 1.3. Train Model Locally
-
-This examples uses ```logistic regression``` model to predict the outcome.
-
-To train the model, run:
-
-```sh
-cd Individual_Project_3
-cargo run all
-```
+And the result is something like
 
 
 
