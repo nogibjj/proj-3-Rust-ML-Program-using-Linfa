@@ -43,10 +43,9 @@ cd Individual_Project_3
 cargo run all
 ```
 
-The output is:
 
-![](../images/indi3_%20(1).png)
 
-</br>
+### Upload Data Files on AWS S3
+Create a bucket
 
-### 2. Use AWS S3
+Upload the file on AWS S3
