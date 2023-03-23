@@ -35,10 +35,12 @@ To run the training model, type:
 cargo run
 ```
 And the result is something like
+![My Image](images/train_result.png)
 
 
 
 ### Upload Data Files on AWS S3
 Create a bucket
-
+![My Image](images/create_bucket.png)
 Upload the file on AWS S3
+![My Image](images/upload_success.png)
