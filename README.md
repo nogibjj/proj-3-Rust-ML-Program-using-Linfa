@@ -7,7 +7,7 @@ I also try to deploy the program on Amazon SageMaker Studio, but found it only s
 
 #### 1.Linfa - A Meta-crate for ML
 
-Linfa is a higher-level meta-crate that includes common helpers for data processing and algorithms for many areas of machine learning, including [[1]](https://blog.logrocket.com/machine-learning-in-rust-using-linfa/):
+Linfa is a higher-level meta-crate that includes common helpers for data processing and algorithms for many areas of machine learning, including:
 
 - Linear regression
 - Data clustering
@@ -19,7 +19,9 @@ Linfa is a higher-level meta-crate that includes common helpers for data process
 #### 2. Dataset
 
 In the code of main.rs, I use the build in dataset in linfa to classify quality of wine into good and bad
-```let(train,valid) = linfa_datasets::winequality()```
+```
+let(train,valid) = linfa_datasets::winequality()
+```
 
 There are also two relatively big datasets in ```data``` folder: ```winequality-white.csv``` and ```winequality-red.csv```.
 
